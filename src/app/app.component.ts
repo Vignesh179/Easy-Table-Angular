@@ -51,7 +51,7 @@ export class AppComponent {
     name: 'Bheem',
     isActive: true,
   }
-];
+  ];
   ngOnInit(): void {
     this.configuration = { ...DefaultConfig };
     this.configuration.searchEnabled = true;
@@ -60,6 +60,7 @@ export class AppComponent {
       { key: 'name', title: 'Name' },
       { key: 'age', title: 'Age' },
       { key: 'phone', title: 'Phone' },
+      { key: 'address', title: 'address' },
       { key: 'company', title: 'Company' },
       { key: 'isActive', title: 'STATUS' },
     ];
