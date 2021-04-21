@@ -8,7 +8,6 @@ import { Columns, Config, DefaultConfig } from 'ngx-easy-table';
 export class AppComponent {
   public configuration: Config;
   public columns: Columns[];
-
   public data = [{
     phone: '+91 9698631958',
     age: 26,
@@ -52,18 +51,16 @@ export class AppComponent {
     name: 'Bheem',
     isActive: true,
   }
-
 ];
-
   ngOnInit(): void {
     this.configuration = { ...DefaultConfig };
     this.configuration.searchEnabled = true;
     // ... etc.
     this.columns = [
-      { key: 'phone', title: 'Phone' },
-      { key: 'age', title: 'Age' },
-      { key: 'company', title: 'Company' },
       { key: 'name', title: 'Name' },
+      { key: 'age', title: 'Age' },
+      { key: 'phone', title: 'Phone' },
+      { key: 'company', title: 'Company' },
       { key: 'isActive', title: 'STATUS' },
     ];
   }
