@@ -54,7 +54,8 @@ export class AppComponent {
   ];
   ngOnInit(): void {
     this.configuration = { ...DefaultConfig };
-    this.configuration.searchEnabled = true;
+    this.configuration.searchEnabled = false;
+    this.configuration.detailsTemplate = true;
     // ... etc.
     this.columns = [
       { key: 'name', title: 'Name' },
