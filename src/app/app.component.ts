@@ -63,7 +63,7 @@ export class AppComponent {
       { key: 'phone', title: 'Phone' },
       { key: 'address', title: 'Address' },
       { key: 'company', title: 'Company' },
-      { key: 'isActive', title: 'STATUS' },
+      { key: 'isActive', title: 'Status' },
     ];
   }
 }
